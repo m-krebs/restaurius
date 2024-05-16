@@ -14,6 +14,9 @@ importers:
       '@tauri-apps/plugin-shell':
         specifier: '>=2.0.0-beta.0'
         version: 2.0.0-beta.4
+      '@tauri-apps/plugin-sql':
+        specifier: 2.0.0-beta.3
+        version: 2.0.0-beta.3
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.1
@@ -385,6 +388,9 @@ packages:
 
   '@tauri-apps/plugin-shell@2.0.0-beta.4':
     resolution: {integrity: sha512-y9APB3ZLtkY4IM6syE+dn/R4XR2UTHBcAI/n9L5PgnvOjJAuuEzVYURn10G51nKnLw+sFbxO7LW4VW66Uoaa9g==}
+
+  '@tauri-apps/plugin-sql@2.0.0-beta.3':
+    resolution: {integrity: sha512-cjSu/3GGRFoy2m24KDYDXIttu8uzUm437VSmYPH0fGEPyaBZwHBAdhyvUrZtXFMj6HH/G53I1Pu1nivc5QwxBA==}
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -907,6 +913,10 @@ snapshots:
       '@tauri-apps/cli-win32-x64-msvc': 2.0.0-beta.17
 
   '@tauri-apps/plugin-shell@2.0.0-beta.4':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.11
+
+  '@tauri-apps/plugin-sql@2.0.0-beta.3':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.11
 

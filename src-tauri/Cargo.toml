@@ -1,8 +1,8 @@
 [package]
-name = "tauri-v2-sveltekit-template"
+name = "restaurius"
 version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "A REST Client build with Tauri"
+authors = ["m-krebs"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -19,4 +19,8 @@ tauri = { version = "2.0.0-beta", features = [] }
 tauri-plugin-shell = "2.0.0-beta"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+# sqlite = "0.36.0"
 
+[dependencies.tauri-plugin-sql]
+features = ["sqlite"]
+version = "2.0.0-beta"

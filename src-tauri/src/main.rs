@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    tauri_v2_sveltekit_template_lib::run()
+    tauri_v2_sveltekit_template_lib::run();
 }
